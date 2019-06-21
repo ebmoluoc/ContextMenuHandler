@@ -129,7 +129,7 @@ IFACEMETHODIMP ContextMenuHandler::InvokeCommand(LPCMINVOKECOMMANDINFO pici)
 		return E_FAIL;
 	}
 
-	auto msg{ pathList_.GetItems()[0] };
+	auto msg{ pathList_.GetFirstItem() };
 
 	switch (LOWORD(pici->lpVerb))
 	{
